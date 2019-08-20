@@ -37,7 +37,7 @@ OR
   }
 ```
 
-* privatekey or pw at lest set one *  
+* privatekey or pw at lest set one  
 
 > command line
 ```bash
