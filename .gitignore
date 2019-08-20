@@ -64,4 +64,5 @@ typings/
 build
 .remote-server.json
 dist
+dest
 tmp
