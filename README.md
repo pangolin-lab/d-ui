@@ -3,17 +3,16 @@
 
 
 ## Command line use
-
+``` bash
   $ npm install
-
   $ npm start   `run demo in local`
-
+```
 OR 
-
+```bash
   $ npm install -D shelljs
   $ npm install -D bestzip
   $ npm install -D lite-server 
-
+```
 
 ## Publish Remote Host
 
@@ -25,6 +24,7 @@ OR
 ### remote config json
 > Configuration file At ${basedir}/.configs/.remote-server.json 
 
+``` json
   {
 	"host":"xxx.xxx.xxx.xxx",
 	"port":22,
@@ -35,14 +35,14 @@ OR
 	"privatekey":"id_rsa",
 	"pw":"123456"
   }
-
+```
 
 * privatekey or pw at lest set one *  
 
 > command line
-
+```bash
   $ node bin/publisher.js    		//upload project to remote.
   $ node bin/upload-apk.js 			//upload file to remote.
+```
 
-  
  
