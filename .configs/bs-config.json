@@ -1,0 +1,21 @@
+{
+	"port": 64389,
+	"bind": "localhost",
+	"files": ["./public/**/*.{html,htm,css,js}"],
+	"index": "dl-index.html",
+	"server": [
+		"./build",
+		"./public",
+		"./atta"
+	],
+	"watchexps"	: [
+		"public/**.js # # reload",
+		"public/**.css # # reloadcss",
+		"public/**.html # # reload"
+	],
+	"interval" 	: 500,
+	"delay"		: 1000,
+	"quiet" 	: false,
+	"open"		: true,
+	"http2"		: false
+}

@@ -1,0 +1,112 @@
+<!--
+* ____            _                ____            _                  _   _          _     
+*|  _ \ _ __ ___ | |_ ___  _ __   |  _ \ _ __ ___ | |_ ___   ___ ___ | | | |    __ _| |__  
+*| |_) | '__/ _ \| __/ _ \| '_ \  | |_) | '__/ _ \| __/ _ \ / __/ _ \| | | |   / _` | '_ \ 
+*|  __/| | | (_) | || (_) | | | | |  __/| | | (_) | || (_) | (_| (_) | | | |__| (_| | |_) |
+*|_|   |_|  \___/ \__\___/|_| |_| |_|   |_|  \___/ \__\___/ \___\___/|_| |_____\__,_|_.__/ 
+*
+* Copyright (c) 2019 PPL,proton-team 
+* E-mail : developer-team@proton.one
+-->
+
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="shortcut icon" href="favicon.ico">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1,shrink-to-fit=no">
+  <title>Proton</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="lib/awesome-font/css/font-awesome.min.css">
+  <link rel="stylesheet" href="lib/iconfont/iconfont.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+  
+
+  <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+  <!-- import CDN js -->  
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  <style type="text/css">
+  	#proton-stream {
+  		z-index : -1;
+  		position : absolute;
+  		width: 100%;
+  		height: 100vh;
+  		background: -webkit-gradient(linear, left top, right bottom, from(rgba(255,255,255, 0.1)), color-stop(85%, rgba(255,255,255, 0.8)), to(#ffffff));
+        /* background: linear-gradient(to bottom, rgb(10, 10, 50) 0%,rgb(60, 10, 60) 100%); */
+  		vertical-align: middle;
+	  }
+
+    .p-header {
+      padding-top : 25px;
+      padding-bottom:5em;
+    }
+  </style>
+</head>
+<body>
+  <header>
+  	<canvas id="proton-stream" class="masthead-bg"></canvas>  	
+  	<div class="android container" id="android">
+      <div class="row justify-content-end align-items-end dl-tips d-none">
+        <div data-toggle="tooltip">
+          <span class="text-right">请点击右上角<br/>选择浏览器打开</span>
+        </div>
+      </div>
+      <div class="row justify-content-center align-items-center">
+        <div class="col-xl-6 col-md-8 col-sm-10">
+          <div class="card-body">
+            <h1 class="px-xl-10 px-sm-4"></h1>
+          </div>
+          <div class="card-block text-center">
+            <h1 class="px-xl-5 px-sm-2">Proton</h1>
+            <img src="img/proton-android.png" class="qrcode-img">
+          </div>
+          <div class="card-body text-center">
+            <div class="pt-2">
+              <a class="btn btn-info dl-btn" href="http://proton.ppn.one/proton-release.apk">download</a>
+              <p class="dl-tips text-danger d-none">WeChat/QQ can't downloaded.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center align-items-center remark-container"> 
+        <div class="col-xl-6 col-md-8 col-sm-10">
+          <h3 class="">remark</h3>
+        </div>
+    </div>
+    <div class="row justify-content-center align-items-center remark-container"> 
+        <div class="col-xl-6 col-md-8 col-sm-10 ml-2">
+        <p class="mx-2 p-content">
+
+        </p>
+        </div>
+      </div>
+  	</div>  	
+  </header>
+
+<!-- 引入 js binding -->
+<script type="text/javascript" src="lib/proton-stream/proton-stream.js"></script>
+<script type="text/javascript" src="js/dl-index.js"></script>
+<script type="text/javascript">
+	(function($){
+      "use strict"; // Start of use strict
+
+/*      if (document.readystate !== 'loading') {
+        startAnimation('proton-stream');
+      } else {
+        document.addEventListener('DOMContentLoaded', () => {
+          startAnimation('proton-stream');
+        })
+      }*/
+    
+     Initialize();
+	})(jQuery);
+</script>
+
+</body>  

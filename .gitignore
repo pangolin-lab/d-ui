@@ -59,3 +59,9 @@ typings/
 
 # next.js build output
 .next
+
+# Project IGnore
+build
+.remote-server.json
+dist
+tmp

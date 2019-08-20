@@ -1,0 +1,25 @@
+{
+  "name": "d-ui",
+  "version": "1.0.0",
+  "description": "Download WEB UI",
+  "main": "src/index.js",
+  "scripts": {
+    "serve":"lite-server -c .configs/bs-config.json",
+    "start": "npm run serve",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@ppn:proton-lab/d-ui.git"
+  },
+  "keywords": [
+    "Node"
+  ],
+  "author": "Proton-team",
+  "license": "MIT",
+  "devDependencies": {
+    "bestzip": "^2.1.4",
+    "lite-server": "^2.5.4",
+    "shelljs": "^0.8.3"
+  }
+}
