@@ -18,7 +18,7 @@
   "author": "Proton-team",
   "license": "MIT",
   "devDependencies": {
-    "bestzip": "^2.1.4",
+    "bestzip": "^2.1.7",
     "lite-server": "^2.5.4",
     "shelljs": "^0.8.3"
   }
